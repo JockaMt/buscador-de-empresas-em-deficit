@@ -27,6 +27,17 @@ Aplicativo desktop com interface gráfica para automação de busca de dados de 
 
 ---
 
+## 📂 Estrutura do Projeto
+
+* `controllers/`: Lógica de integração e fluxo do aplicativo
+* `models/`: Regras de negócio, automação web e manuseio de dados Excel
+* `views/`: Interface gráfica construída com Tkinter
+* `public/`: Arquivos estáticos e mídias
+* `main.py`: Ponto de entrada do aplicativo
+* `requirements.txt`: Dependências do projeto
+
+---
+
 ## ⚙️ Como usar
 
 ```bash
@@ -37,7 +48,7 @@ git clone https://github.com/JockaMt/EmpresasEmDefices.git
 cd EmpresasEmDefices
 
 # Instalar dependências
-pip install openpyxl pandas selenium ttkbootstrap webdriver-manager XlsxWriter
+pip install -r requirements.txt
 
 # Rodar o aplicativo
 python main.py
@@ -47,7 +58,7 @@ python main.py
 
 ## 📸 Demonstração
 
-(prints do aplicativo funcionando e planilhas geradas)
+![Interface do Buscador](docs/app.gif)
 
 ---
 
@@ -59,10 +70,10 @@ Projeto desenvolvido para automatizar a busca e extração de informações de e
 
 ## 💡 Melhorias futuras
 
+* [x] Refatoração para arquitetura MVC ✅
 * [ ] Suporte a execução em segundo plano (Headless mode)
 * [ ] Adicionar mais cidades para pesquisa
 * [ ] Barra de progresso para acompanhamento em tempo real
-* [ ] Refatoração para arquitetura MVC ou POO
 
 ---
 
